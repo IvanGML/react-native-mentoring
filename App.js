@@ -1,19 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { LoginPage } from './components/LoginPage';
+import { View } from 'react-native';
+import { Root } from './app/index';
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-          <LoginPage />
+      <View style={{flex: 1}}>
+          <Root />
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  }
-});
